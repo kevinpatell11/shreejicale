@@ -84,6 +84,11 @@ h1 {
   color: hsl(0, 0%, 0%);
   font-weight: bold;
   letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 0%, 80%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1.5s 2 normal both,
+    blinkTextCursor 500ms infinite;
 }
 
 @keyframes typewriter {
@@ -241,7 +246,7 @@ ul li a:hover {
     }
 }
 
-button {
+button{
     width: 200px;
     height: 50px;
     text-decoration: none;
@@ -258,6 +263,12 @@ button {
 button:hover {
     background-color: #c9c8c8;
     font-weight: bolder;
+}
+
+.inbtn {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 .heading-gallary {
@@ -284,12 +295,20 @@ button:hover {
     display: inline-block;
 }
 
+.h3{
+    margin-top: 12px;
+}
+
 .box1:hover{
     width: 75%;
     font-size: larger;
     box-shadow: 50px 20px 15px rgb(82, 82, 82);
 }
 
+h4 {
+    display: block;
+    font-weight: bold;
+}
 
 .footer {
     height: 100vh;
